@@ -59,12 +59,12 @@ Virtual Machines used for testing : </br>
 
 # How to run?
 1. Runing the script is simple, you must have root privelages. Run the `main.py` file to begin the Tunnel. 
-2. ``sudo python3 main.py ens38 -dst 192.168.1.100 -key 256 -tun asa0.`` 
+2. ``sudo python3 main.py ens38 -dst 192.168.1.100 -key 256 -tun asa0``.
 
 ![usage](./screenshots/usage.jpg)
 
 2. Must run this on both the Machine with the correct parameters.
-3.Requirements to run this Tunnel. </br>
+3. Requirements to run this Tunnel.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Python 3.8.2      
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Ubuntu 20.10 Virtual Machine.    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Four Interfaces with IP configured.        
