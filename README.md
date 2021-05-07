@@ -33,7 +33,7 @@ In the CentOs Machine , run following commands to setup a TUN interface called a
 ![tun1](./screenshots/tun2.jpg)
 
 
-# How this firewall works?
+# How this Tunnel works?
 
 Basically, This Tunnel program runs in ubuntu box with TWO NIC interfac, which one is assigned a static Ip Address and other one is TUN interface that works as a virtual NIC. We have to excute the same file in both the machines to work.
 
@@ -57,7 +57,7 @@ Virtual Machines used for testing : </br>
 
 ![usage](./screenshots/usage.jpg)
 
-3 Requirements to run this Firewall. </br>
+3 Requirements to run this Tunnel. </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Python 3.8.2      </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Ubuntu 20.10 Virtual Machine.     </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Four Interfaces with IP configured.        </br>
