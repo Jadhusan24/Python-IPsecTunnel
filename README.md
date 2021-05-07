@@ -58,15 +58,16 @@ Virtual Machines used for testing : </br>
 ![test1](./screenshots/test2.jpg)
 
 # How to run?
-1 Runing the script is simple, you must have root privelages. Run the `main.py` file to begin the firewall. </br>
-2 ``sudo python3 main.py ens38 -dst 192.168.1.100 -key 256 -tun asa0.`` </br>
+1. Runing the script is simple, you must have root privelages. Run the `main.py` file to begin the Tunnel. 
+2. ``sudo python3 main.py ens38 -dst 192.168.1.100 -key 256 -tun asa0.`` 
 
 ![usage](./screenshots/usage.jpg)
 
-3 Requirements to run this Firewall. </br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Python 3.8.2      </br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Ubuntu 20.10 Virtual Machine.     </br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Four Interfaces with IP configured.        </br>
-3 Dependencies.      </br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - pip3 install pycryptodome      </br>
+2. Must run this on both the Machine with the correct parameters.
+3.Requirements to run this Tunnel. </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Python 3.8.2      
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Ubuntu 20.10 Virtual Machine.    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Four Interfaces with IP configured.        
+4. Dependencies.      </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - pip3 install pycryptodome     
 
