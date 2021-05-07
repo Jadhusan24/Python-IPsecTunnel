@@ -42,8 +42,14 @@ Virtual Machines used for testing : </br>
 1. Ubuntu 20.10
 2. CentOs Linux 
 
-- Interface 1 Ubuntu 20.10 - 192.168.1.1 Static Ip
-- Interface 2 CentOs - 192.168.1.100 Static Ip
+#### UBUNTU VM
+- Physical Interface = 192.168.1.1 Static Ip
+- Logical Interface  = 10.0.1.1     Static Ip
+
+#### CENTOS VM
+- Physical Interface = 192.168.1.100 Static Ip
+- Logical Interface  = 10.0.1.2      Static Ip
+
 
 **UBUNTU MACHINE**
 ![test1](./screenshots/test1.jpg)
