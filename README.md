@@ -17,23 +17,23 @@ If you switch the connection x to a raw socket connection and implement somethin
 
 In the Ubuntu Machine 20.10, run following commands to setup a TUN interface called asa0.
 
-1. sudo ip tuntap add dev asa0 mode tun
-2. sudo ip addr add 10.0.1.1/24 dev asa0
-3. sudo ip link set dev asa0 up
-4. ip addr show
+1. ``sudo ip tuntap add dev asa0 mode tun``
+2. ``sudo ip addr add 10.0.1.1/24 dev asa0``
+3. ``sudo ip link set dev asa0 up``
+4. ``ip addr show``
 
 ![tun1](./screenshots/tun1.jpg)
 
 In the CentOs Machine , run following commands to setup a TUN interface called asa0.
-1. sudo ip tuntap add dev asa0 mode tun
-2. sudo ip addr add 10.0.1.2/24 dev asa0
-3. sudo ip link set dev asa0 up
-4. ip addr show
+1. ``sudo ip tuntap add dev asa0 mode tun``
+2. ``sudo ip addr add 10.0.1.2/24 dev asa0``
+3. ``sudo ip link set dev asa0 up``
+4. ``ip addr show``
 
 ![tun1](./screenshots/tun2.jpg)
 
 
-# How this Tunnel works?
+# How this firewall works?
 
 Basically, This Tunnel program runs in ubuntu box with TWO NIC interfac, which one is assigned a static Ip Address and other one is TUN interface that works as a virtual NIC. We have to excute the same file in both the machines to work.
 
@@ -57,7 +57,7 @@ Virtual Machines used for testing : </br>
 
 ![usage](./screenshots/usage.jpg)
 
-3 Requirements to run this Tunnel. </br>
+3 Requirements to run this Firewall. </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Python 3.8.2      </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Ubuntu 20.10 Virtual Machine.     </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Four Interfaces with IP configured.        </br>
