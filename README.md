@@ -33,7 +33,7 @@ In the CentOs Machine , run following commands to setup a TUN interface called a
 ![tun1](./screenshots/tun2.jpg)
 
 
-# How this firewall works?
+# How this Tunnel works?
 
 Basically, This Tunnel program runs in ubuntu box with TWO NIC interfac, which one is assigned a static Ip Address and other one is TUN interface that works as a virtual NIC. We have to excute the same file in both the machines to work.
 
