@@ -74,7 +74,6 @@ def unpack_ipv4(packet):
     ih_len = (version_ihl & 0xF) * 4
     ttl = iph[5]
     protocol = iph[6]
-
     s_addr = socket.inet_ntoa(iph[8])
     d_addr = socket.inet_ntoa(iph[9])
     return s_addr, d_addr, protocol
