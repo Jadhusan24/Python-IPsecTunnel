@@ -42,7 +42,6 @@ class IPHeader:
 
         ip_dsc = 0
         ip_ecn = 0
-
         self.ip_dfc = (ip_dsc << 2) + ip_ecn
         self.ip_tol = 0
 
