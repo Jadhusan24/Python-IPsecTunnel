@@ -37,7 +37,6 @@ class IPHeader:
     def create_ipv4_feilds_list(self):
         ip_ver = 4
         ip_vhl = 5
-
         self.ip_ver = (ip_ver << 4) + ip_vhl
 
         ip_dsc = 0
