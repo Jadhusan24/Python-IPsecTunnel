@@ -46,7 +46,6 @@ class IPHeader:
 
         # ---- [ Identification ]
         self.ip_idf = 0
-
         ip_rsv = 0
         ip_dtf = 0
         ip_mrf = 0
