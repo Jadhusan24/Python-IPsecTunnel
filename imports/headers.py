@@ -67,7 +67,6 @@ def unpack_ipv4(packet):
 
     version_ihl = iph[0]
     version = version_ihl >> 4
-
     ih_len = (version_ihl & 0xF) * 4
     ttl = iph[5]
     protocol = iph[6]
