@@ -35,7 +35,7 @@ In the CentOs Machine , run following commands to setup a TUN interface called a
 
 # How this Tunnel works?
 
-Basically, This Tunnel program runs in ubuntu box with TWO NIC interface, which one is assigned a static Ip Address and other one is TUN interface that works as a virtual NIC. We have to excute the same file in both the machines to work.
+Basically, This Tunnel program runs in ubuntu box with TWO NIC interface, which one is assigned a static Ip Address and other one is TUN interface that works as a virtual NIC. We have to excute the same file in both the machines to work. After excuting I will do a ICMP test using {ping} from Virtual NIC (asa0) on VM1 to VM2. Use the following command ``ping -I 10.0.1.1 10.0.1.2``. The Ping will send a ICMP request from vm1 to vm2 but the asa0 has no routing therefore my Ipsec program will capture the traffic and encrypt the packet with AES algorithm. Then I encapsulates the packet within new IP packet and send it to Physical NIC on VM2. When the packet arrives to VM2's physical NIC, It decrypt the packet and Write it into It's Virtual NIC(asa0). Then VM2's Virtual NIC will send a ICMP reply to the request (ping), Ipsec will program capture the packet and encrypt it. Thats how the tunnel works.
 
 ## EXAMPLE
 Virtual Machines used for testing : </br>
@@ -44,11 +44,11 @@ Virtual Machines used for testing : </br>
 
 #### UBUNTU VM
 - Physical Interface = 192.168.1.1/24 Static Ip
-- Logical Interface  = 10.0.1.1/24     Static Ip
+- Logical Interface (asa0)   = 10.0.1.1/24     Static Ip
 
 #### CENTOS VM
 - Physical Interface = 192.168.1.100/24 Static Ip
-- Logical Interface  = 10.0.1.2/24      Static Ip
+- Logical Interface (asa0)  = 10.0.1.2/24      Static Ip
 
 
 **UBUNTU MACHINE**
