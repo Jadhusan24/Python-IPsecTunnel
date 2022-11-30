@@ -3,7 +3,7 @@ Transmitting IP packets through the public internet is a bad idea due to bad guy
 of IPSec work (i.e. ESP).
 
 #### ARTICLE 
-   https://jadhusan-s.medium.com/ipsec-tunneling-3ecf41478b58
+   https://blog.jadhusan.com/ipsec-tunneling/
    
    [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadhusan24/) 
 
